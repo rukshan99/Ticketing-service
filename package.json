@@ -1,23 +1,17 @@
 {
-  "name": "onlineticketing",
+  "name": "onlineticketingapi",
   "version": "1.0.0",
-  "description": "A mobile app for online ticketing",
+  "description": "A mobile app api for online ticketing",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/SE3070/implementation-walkthrough-2021s2_reg_we_50.git"
-  },
-  "author": "2021S2_REG_WE_50",
+  "author": "Rukshan Jayasekara",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SE3070/implementation-walkthrough-2021s2_reg_we_50/issues"
+  "engines": {
+    "node": "14.x"
   },
-  "homepage": "https://github.com/SE3070/implementation-walkthrough-2021s2_reg_we_50#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
