@@ -33,10 +33,10 @@ exports.getAllTrips = async (req, res, next) => {
 }
 
 exports.getTripById = async (req, res, next) => {
-    if (!req.body || !req.body.id) {
-        res.send(new HttpError('Invalid request body', 400));
+    if (!req.params.id) {
+        res.send(new HttpError('Invalid request params', 400));
     }
-    const tripId = req.body.id;
+    const tripId = req.params.id;
 
     try {
         const trip = await Trip.findById(tripId);
