@@ -39,7 +39,7 @@ exports.getTripById = async (req, res, next) => {
     const tripId = req.body.id;
 
     try {
-        const trip = await Trip.findOne({_id: tripId});
+        const trip = await Trip.findById(tripId);
         res.status(200).send({ data: trip });
     } catch (error) {
         res.send(new HttpError(error.message, 500));
